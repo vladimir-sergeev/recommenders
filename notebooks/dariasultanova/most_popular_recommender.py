@@ -1,7 +1,8 @@
 import pandas as pd
+from recommender import Recommender
 
 
-class MostPopularRecommender():
+class MostPopularRecommender(Recommender):
 
     def __init__(self, train_df, valid_df, test_df, orders_df, order_products_df):
         self.train = train_df
